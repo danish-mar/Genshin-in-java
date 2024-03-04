@@ -5,9 +5,6 @@ import com.genshinimpact.Element;
 import com.genshinimpact.weapon.Type;
 import com.genshinimpact.weapon.Weapon;
 
-import java.util.ArrayList;
-import java.util.List;
-
 class Talent {
     private String name;
     private String description;
@@ -65,7 +62,7 @@ public class Character {
 
     protected Weapon weapon;
 
-    private Type weapongType;
+    protected Type weaponType;
 
     protected int constellation;
     protected Rarity rarity;
@@ -73,6 +70,9 @@ public class Character {
     protected int hp;
     protected int atk;
     protected int def;
+
+    protected float healingBonus;
+
     protected int elementalMastery;
     float energyRecharge;
     protected float critRate;
@@ -121,15 +121,15 @@ public class Character {
     }
 
     public int getAssensionMilestone(){
-        if(level >= 20){
+        if(level <= 20){
             return 1; // Ascension milestone reached at level 20
-        } else if (level >= 40) {
+        } else if (level <= 40) {
             return 2; // Ascension milestone reached at level 50
-        } else if (level >= 60) {
+        } else if (level <= 60) {
             return 3; // Ascension milestone reached at level 60
-        } else if (level >= 80) {
+        } else if (level <= 80) {
             return 4; // Ascension milestone reached at level 70
-        } else if (level >= 90) {
+        } else if (level <= 90) {
             return 5; // Ascension milestone reached at level 80
         } else {
             return 0; // Character hasn't reached any ascension milestone yet
@@ -238,7 +238,16 @@ public class Character {
             this.energyRecharge = energyRecharge;
         }
 
-        public float getCritRate() {
+    public void setHealingBonus(float healingBonus) {
+        this.healingBonus = healingBonus;
+    }
+
+    public float getHealingBonus() {
+        return healingBonus;
+    }
+
+
+    public float getCritRate() {
             return critRate;
         }
 
@@ -383,11 +392,13 @@ public class Character {
         }
     }
 
-    public void setWeapon(Weapon weapon){
+    void setWeapon(Weapon weapon){
         this.weapon = weapon;
     }
 
+    public Weapon getWeapon() {
+        return weapon;
+    }
 
-
-//    Character(){};
+    //    Character(){};
 }

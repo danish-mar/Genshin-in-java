@@ -1,6 +1,7 @@
 import com.genshinimpact.character.playable.*;
 import com.genshinimpact.Rarity;
 import com.genshinimpact.Element;
+import com.genshinimpact.view.Stats;
 import com.genshinimpact.weapon.Sword;
 import com.genshinimpact.weapon.Weapon;
 import com.genshinimpact.weapon.Weapons.Swords.MistsplitterReforged;
@@ -11,32 +12,49 @@ class Main{
 
     public static void main(String[] args) {
 
-//        Keqing keqing = new Keqing();
-//        keqing.getCharacterDetails();
-//        keqing.ascension();
-//        keqing.ascension();
-//        keqing.ascension();
-//        keqing.ascension();
-//        keqing.ascension();
-//        keqing.ascension();
-//        keqing.ascension();
-//        keqing.ascension();
-//        keqing.getCharacterDetails(true);
-
-        MistsplitterReforged mistsplitterReforged = new MistsplitterReforged();
-
-        System.out.println(mistsplitterReforged.name + " Initialized \n @ ATK " + mistsplitterReforged.getAtk() + "\nAnd CRIT DMG " + mistsplitterReforged.getCritDamage());
-
-        System.out.println("[i] Accession " + mistsplitterReforged.getAssensionMilestone());
+        Keqing keqing = new Keqing();
+        keqing.getCharacterDetails();
+        keqing.ascension();
+        keqing.ascension();
+        keqing.ascension();
+        keqing.ascension();
+        keqing.ascension();
+        keqing.ascension();
+        keqing.ascension();
+        keqing.ascension();
 
 
-        mistsplitterReforged.ascend();
-
-        System.out.println("+ Accented to " + mistsplitterReforged.getAssensionMilestone());
+        Weapon keqing_weapon = new MistsplitterReforged();
 
 
-        System.out.println(mistsplitterReforged.name + " Acended \n @ ATK " + mistsplitterReforged.getAtk() + "\nAnd CRIT DMG " + mistsplitterReforged.getCritDamage());
+        System.out.println(keqing_weapon.getAtk());
+        keqing_weapon.ascend();
 
+        keqing_weapon.ascend();
+        keqing_weapon.ascend();
+        keqing_weapon.ascend();
+        keqing_weapon.ascend();
+        keqing_weapon.ascend();
+        keqing_weapon.ascend();
+        keqing_weapon.ascend();
+        keqing_weapon.ascend();
+
+
+        keqing.setWeapon(keqing_weapon);
+
+
+
+
+
+
+
+
+
+        Stats s0 = new Stats(keqing);
+
+        s0.printStats();
+
+        //keqing.setWeapon();
 
 
 

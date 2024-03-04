@@ -7,8 +7,11 @@ public class Weapon {
     public String name;
     public Rarity rarity;
     int atk;
+    int def;
+
+    int hp;
     int level;
-    Type weaponType;
+    protected Type weaponType;
     int refinementLevel;
 
     float critRate;
@@ -75,12 +78,23 @@ public class Weapon {
         return rarity;
     }
 
+    public int getDef() {
+        return def;
+    }
+
+    public int getHp() {
+        return hp;
+    }
 
     //setters
 
 
     public void setAtk(int atk) {
         this.atk = atk;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp;
     }
 
     public void setCritDamage(float critDamage) {

@@ -2,6 +2,8 @@ package com.genshinimpact.character.playable;
 
 import com.genshinimpact.Rarity;
 import com.genshinimpact.Element;
+import com.genshinimpact.weapon.Type;
+import com.genshinimpact.weapon.Weapon;
 
 public class Keqing extends Character {
 
@@ -34,12 +36,20 @@ public class Keqing extends Character {
     }
 
 
-
+    @Override
+    public void setWeapon(Weapon weapon) {
+        if (weapon.getWeaponType() == Type.valueOf("SWORD")) {
+            this.weapon = weapon;
+        } else {
+            System.out.println("\n " + this.name + " is not trained to use weapons of type " + weapon.getWeaponType().name() + " - " + weapon.getName());
+        }
+    }
 
 
     public Keqing() {
         // Initialize the fields of the superclass (Character)
         this.name = "Keqing";
+        this.weaponType = Type.SWORD;
         this.rarity = Rarity.fiveStar; // Assuming Keqing is a 5-star character
         this.element = Element.ELECTRO; // Assuming Keqing's element is Electro
         this.level = 1; // Initialize level to 1

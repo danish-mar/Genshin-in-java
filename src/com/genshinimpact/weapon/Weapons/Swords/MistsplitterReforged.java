@@ -2,6 +2,7 @@ package com.genshinimpact.weapon.Weapons.Swords;
 
 import com.genshinimpact.Rarity;
 import com.genshinimpact.weapon.Sword;
+import com.genshinimpact.weapon.Type;
 
 public class MistsplitterReforged extends Sword {
 
@@ -52,6 +53,7 @@ public class MistsplitterReforged extends Sword {
 
     public MistsplitterReforged(){
         this.name = "Mistsplitter Reforged";
+        this.weaponType = Type.SWORD;
         this.rarity = Rarity.fiveStar;
         this.setAtk(48);
         this.setCritDamage(1);
