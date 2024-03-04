@@ -2,6 +2,8 @@ package com.genshinimpact.character.playable;
 
 import com.genshinimpact.Rarity;
 import com.genshinimpact.Element;
+import com.genshinimpact.weapon.Type;
+import com.genshinimpact.weapon.Weapon;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +11,7 @@ import java.util.List;
 class Talent {
     private String name;
     private String description;
+
     private int level;
 
 
@@ -59,6 +62,10 @@ public class Character {
 
     protected String name;
     protected Element element;
+
+    protected Weapon weapon;
+
+    private Type weapongType;
 
     protected int constellation;
     protected Rarity rarity;
@@ -375,6 +382,12 @@ public class Character {
             }
         }
     }
+
+    public void setWeapon(Weapon weapon){
+        this.weapon = weapon;
+    }
+
+
 
 //    Character(){};
 }
