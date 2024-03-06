@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21ce6215-ac54-4904-864f-f561ba0adc7c" name="Changes" comment="added some code for characters">
-      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/view/Stats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/artifact/Artifact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/artifact/ArtifactGroups.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/artifact/ArtifactType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/artifact/artifacts/thunderingFury/flowerOfLife.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/artifact/artifacts/thunderingFury/plumeOfDeath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/artifact/exceptions/MaxLevelException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/artifact/stats.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/genshinimpact/character/playable/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/genshinimpact/character/playable/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/genshinimpact/character/playable/Keqing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/genshinimpact/character/playable/Keqing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/genshinimpact/weapon/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/genshinimpact/weapon/Weapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/genshinimpact/weapon/Weapons/Swords/MistsplitterReforged.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/genshinimpact/weapon/Weapons/Swords/MistsplitterReforged.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,14 +23,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/com/genshinimpact/artifact/Artifact.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -62,10 +66,15 @@
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.genshinimpact.artifact.exceptions" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-78a6f59c" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
       </set>
     </attachedChunks>
   </component>
