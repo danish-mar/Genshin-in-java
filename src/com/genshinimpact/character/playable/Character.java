@@ -2,8 +2,12 @@ package com.genshinimpact.character.playable;
 
 import com.genshinimpact.Rarity;
 import com.genshinimpact.Element;
+import com.genshinimpact.artifact.Artifact;
+import com.genshinimpact.artifact.ArtifactType;
+import com.genshinimpact.exceptions.artifact.InvalidArtifactTypeException;
 import com.genshinimpact.weapon.Type;
 import com.genshinimpact.weapon.Weapon;
+import org.jetbrains.annotations.NotNull;
 
 class Talent {
     private String name;
@@ -87,6 +91,15 @@ public class Character {
     protected float anemoDamageBonus;
     protected float cryoDamageBonus;
     protected float physicalDamageBonus;
+
+
+
+    Artifact flowerOfLife;
+    Artifact plumeOfDeath;
+    Artifact sandsOfEon;
+    Artifact gobletOfEnothem;
+
+    Artifact circletOfLogos;
 
     // Constants
     protected static final int MAX_LEVEL = 90;
@@ -326,6 +339,68 @@ public class Character {
         public void setPhysicalDamageBonus(float physicalDamageBonus) {
             this.physicalDamageBonus = physicalDamageBonus;
         }
+
+        public Artifact getFlowerOfLife() {
+            return flowerOfLife;
+        }
+
+        public void setFlowerOfLife(@NotNull Artifact flowerOfLife) throws InvalidArtifactTypeException {
+            if(flowerOfLife.getType() != ArtifactType.FLOWER_OF_LIFE){
+                throw new InvalidArtifactTypeException(ArtifactType.FLOWER_OF_LIFE, flowerOfLife.getType());
+            }else{
+                this.flowerOfLife = flowerOfLife;
+            }
+        }
+
+        public Artifact getPlumeOfDeath() {
+            return plumeOfDeath;
+        }
+
+        public void setPlumeOfDeath(Artifact plumeOfDeath) throws InvalidArtifactTypeException {
+            if(plumeOfDeath.getType() != ArtifactType.PLUME_OF_DEATH){
+                throw new InvalidArtifactTypeException(ArtifactType.PLUME_OF_DEATH, plumeOfDeath.getType());
+            }else{
+                this.plumeOfDeath = plumeOfDeath;
+            }
+        }
+
+
+        public Artifact getSandsOfEon() {
+            return sandsOfEon;
+        }
+
+        public void setSandsOfEon(Artifact sandsOfEon) throws InvalidArtifactTypeException{
+            if(plumeOfDeath.getType() != ArtifactType.SANDS_OF_EON){
+                throw new InvalidArtifactTypeException(ArtifactType.SANDS_OF_EON, sandsOfEon.getType());
+            }else{
+                this.sandsOfEon = sandsOfEon;
+            }
+        }
+
+        public Artifact getGobletOfEnothem() {
+            return gobletOfEnothem;
+        }
+
+        public void setGobletOfEnothem(Artifact gobletOfEnothem) throws InvalidArtifactTypeException{
+            if(gobletOfEnothem.getType() != ArtifactType.GOBLET_OF_EONOTHEM){
+                throw new InvalidArtifactTypeException(ArtifactType.GOBLET_OF_EONOTHEM, gobletOfEnothem.getType());
+            }else{
+                this.gobletOfEnothem = gobletOfEnothem;
+            }
+        }
+
+        public Artifact getCircletOfLogos() {
+            return circletOfLogos;
+        }
+
+        public void setCircletOfLogos(Artifact circletOfLogos) throws InvalidArtifactTypeException{
+            if(circletOfLogos.getType() != ArtifactType.CIRCLET_OF_LOGOS){
+                throw new InvalidArtifactTypeException(ArtifactType.CIRCLET_OF_LOGOS, circletOfLogos.getType());
+            }else{
+                this.circletOfLogos = circletOfLogos;
+            }
+        }
+
 
 //    public void getCharacterDetails() {
 //        System.out.println("Character Details:");
