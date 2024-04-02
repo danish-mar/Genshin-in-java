@@ -5,7 +5,7 @@ import com.genshinimpact.view.Stats;
 import com.genshinimpact.weapon.Sword;
 import com.genshinimpact.weapon.Weapon;
 import com.genshinimpact.weapon.Weapons.Swords.MistsplitterReforged;
-
+import com.genshinimpact.artifact.*;
 import java.util.Locale;
 
 class Main{
@@ -13,6 +13,8 @@ class Main{
     public static void main(String[] args) {
 
         Keqing keqing = new Keqing();
+
+
         keqing.getCharacterDetails();
         keqing.ascension();
         keqing.ascension();

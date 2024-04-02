@@ -5,24 +5,23 @@ import com.genshinimpact.Rarity;
 import java.util.List;
 
 public class Artifact {
-    private String name;
-    private ArtifactType type;
-    private Rarity rarity;
-    private ArtifactSet set;
-    private Stat mainStat;
-    private List<Stat> substats;
+        private String name;
+        private ArtifactType type;
+        private Rarity rarity;
+        private ArtifactSet set;
+        private List<Stat> substats;
 
-    // ... Constructor, getters, setters ...
+        public Artifact(String name, ArtifactType type, Rarity rarity, ArtifactSet set, List<Stat> substats) {
+            this.name = name;
+            this.type = type;
+            this.rarity = rarity;
+            this.set = set;
+            this.substats = substats;
+        }
+
+        // Getters for all fields
 
 
-    public Artifact(String name, ArtifactType type, Rarity rarity, ArtifactSet set, Stat mainStat, List<Stat> substats) {
-        this.name = name;
-        this.type = type;
-        this.rarity = rarity;
-        this.set = set;
-        this.mainStat = mainStat;
-        this.substats = substats;
-    }
 
     public String getName() {
         return name;
@@ -38,10 +37,6 @@ public class Artifact {
 
     public ArtifactSet getSet() {
         return set;
-    }
-
-    public Stat getMainStat() {
-        return mainStat;
     }
 
     public List<Stat> getSubstats() {

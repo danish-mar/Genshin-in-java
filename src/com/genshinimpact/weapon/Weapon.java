@@ -101,7 +101,7 @@ public class Weapon {
         this.critDamage = critDamage;
     }
 
-    public void setCritRate(int critRate) {
+    public void setCritRate(float critRate) {
         this.critRate = critRate;
     }
 

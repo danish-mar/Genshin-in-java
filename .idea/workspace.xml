@@ -4,18 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21ce6215-ac54-4904-864f-f561ba0adc7c" name="Changes" comment="added some code for characters">
-      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/artifact/Artifact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/artifact/ArtifactSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/artifact/ArtifactType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/artifact/Stat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/artifact/StatType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/exceptions/artifact/InvalidArtifactTypeException.java" afterDir="false" />
+    <list default="true" id="21ce6215-ac54-4904-864f-f561ba0adc7c" name="Changes" comment="added some mechanics for artifacts">
+      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/artifact/type/CircletOfLogos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/artifact/type/FlowerOfLife.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/artifact/type/GobletOfEonothem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/artifact/type/PlumeOfDeath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/artifact/type/SandsOfEon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/exceptions/artifact/InvalidArtifactMainStatException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/weapon/Spear.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/genshinimpact/weapon/Weapons/Polearms/PrimordialJadeWingedSpear.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/genshinimpact/character/playable/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/genshinimpact/character/playable/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/genshinimpact/character/playable/KamisatoAyaka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/genshinimpact/character/playable/KamisatoAyaka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/genshinimpact/character/playable/Keqing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/genshinimpact/character/playable/Keqing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/genshinimpact/character/playable/SangonomiyaKokokmi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/genshinimpact/character/playable/SangonomiyaKokokmi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/genshinimpact/artifact/Artifact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/genshinimpact/artifact/Artifact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/genshinimpact/weapon/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/genshinimpact/weapon/Weapon.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +35,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;danish-mar&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="df3c96e5-15f0-4be7-ad10-20740ee84484" />
+        <option name="url" value="https://github.com/danish-mar/Genshin-in-java.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/com/genshinimpact/character/playable/SangonomiyaKokokmi.java" root0="SKIP_INSPECTION" />
@@ -55,21 +70,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.toDoOptions&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -110,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709556918240</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added some mechanics for artifacts">
+      <option name="closed" value="true" />
+      <created>1711179886537</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711179886537</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,7 +161,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added some code for characters" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some code for characters" />
+    <MESSAGE value="added some mechanics for artifacts" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some mechanics for artifacts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
